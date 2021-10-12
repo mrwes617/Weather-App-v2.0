@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+body{
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-family: 'DM mono', monospace;
+}
+.card-list{
+  display: flex;
+  padding: 3rem;
+  overflow-x: scroll;
+}
+h1 {color: black;
+}
+p {color: black;
+}
+  
+.card:hover{
+  transform: translateY(-1rem);
+}
+.card:hover~.card{
+  transform: translateX(120px);
+}
+.card:not(first-child){
+  margin-left: ;
+}
+.card{ 
+display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 350px;
+  width:400px;
+  min-width: 250px;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: linear-gradient(to right, lightblue,deepskyblue, skyblue, #17141d) ;
+  box-shadow: -5rem 0 10rem black;
+  transition: .2s;
+
+}
+.card-header h1:hover {
+  background: linear-gradient(90deg, #ff8a00,);
+  text-shadow: none;
+  background-clip: text;
+}
+
+
+
